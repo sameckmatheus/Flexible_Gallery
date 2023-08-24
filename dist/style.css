@@ -38,3 +38,43 @@
   color: #d53a9d;
 }
 
+.Gallery img {
+  max-width: 100vh;
+  transition: 0.5s;
+}
+
+.Gallery img:hover {
+  filter: grayscale(1);
+}
+
+.Gallery img.notDisplay {
+  max-width: 0;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+* { box-sizing: border-box;}
+
+body {
+  margin: 12px;
+  background: #111;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Me {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  font-weight: 400;
+  opacity: 0.7;
+  text-decoration: none;
+}
