@@ -1,0 +1,88 @@
+/*===================================
+  # General Settings
+===================================*/
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.Gallery img,
+.Gallery-add {
+  flex: 1 1 0;
+  height: 250px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/*===================================
+  # Add Random Images
+===================================*/
+
+.Gallery-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  box-shadow: 
+    inset 0 0 10px 0px #d53a9d,
+    inset 0 0 20px 10px #743ad5
+  ;
+  color: #d53a9d;
+}
+
+.Gallery img {
+  max-width: 100vh;
+  transition: 0.5s;
+}
+
+.Gallery img:hover {
+  filter: grayscale(1);
+}
+
+.Gallery img.notDisplay {
+  max-width: 0;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+* { box-sizing: border-box;}
+
+body {
+  margin: 12px;
+  background: #111;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Me {
+  width: 600px;
+  background-color: #111;
+  font-size: 10pt;
+  padding: 6px 25px;
+  border-radius: 45px;
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: 
+    inset 0 0 10px 0px #d53a9c81,
+    inset 0 0 20px 10px #733ad573
+  ;
+}
