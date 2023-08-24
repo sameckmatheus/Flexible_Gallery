@@ -1,0 +1,40 @@
+/*===================================
+  # General Settings
+===================================*/
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.Gallery img,
+.Gallery-add {
+  flex: 1 1 0;
+  height: 250px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/*===================================
+  # Add Random Images
+===================================*/
+
+.Gallery-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  box-shadow: 
+    inset 0 0 10px 0px #d53a9d,
+    inset 0 0 20px 10px #743ad5
+  ;
+  color: #d53a9d;
+}
+
